@@ -1,0 +1,36 @@
+body {
+  /*font-family: 'Lato', 'Avenir', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: .5px;
+  line-height: 25px;*/
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+/******************************************************************************/
+/** Wide screen **/
+/*@media (min-width: 992px) {
+	div {
+		max-width: 970px;
+	}
+}*/
+/** Above iPad **/
+@media (min-width: 768px) {
+	div {
+		max-width: 750px;
+	}
+}
+/** Mobile-ish **/
+@media (max-width: 767px) {
+	body {
+		padding: 40px 15px 100px;
+	}
+}
