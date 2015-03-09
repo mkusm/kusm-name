@@ -1,36 +1,114 @@
-body {
-  /*font-family: 'Lato', 'Avenir', sans-serif;
+body {/*
+  font-family: 'Lato', 'Avenir', sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  letter-spacing: .5px;
-  line-height: 25px;*/
+  font-size: 15px;*/
+  letter-spacing: .4px;
+  line-height: 25px;
+	font-family: Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-div {
-  padding-top: 70px;
-  padding-bottom: 70px;
+h1 {
+	margin-top: 0px;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote:after {
+  font-style: normal;
+  text-align: right;
+  display: block;
+  content: " — " attr(cite);
+}
+
+
+.content {
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
 }
+
+.row {
+	padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.row.green-1 {
+	background-color: #005A31;
+	color: #DDD;
+}
+
+.row.green-2 {
+	background-color: #A8CD1B;
+}
+
+.row.green-3 {
+	background-color: #CBE32D;
+}
+
+.row.green-4 {
+	background-color: #F3FAB6;
+}
+
+.row.dark {
+	background-color: #333;
+	color: #DDD;
+}
+
+.header {
+
+}
+
+.hidden.green-1 {
+	color: #005A31;
+}
+
+.hidden.green-1:hover {
+	color: #DDD;	
+}
+
+.hidden.dark {
+	color: #333;
+}
+
+.hidden.dark:hover {
+	color: #DDD;	
+}
+
+
+
+#head {
+	padding-bottom: 10px;
+}
+	
+#references {
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+
+
 /******************************************************************************/
 /** Wide screen **/
-/*@media (min-width: 992px) {
-	div {
+@media (min-width: 992px) {
+	.content {
 		max-width: 970px;
 	}
-}*/
+}
 /** Above iPad **/
 @media (min-width: 768px) {
-	div {
+	.content {
 		max-width: 750px;
 	}
 }
 /** Mobile-ish **/
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
 	body {
 		padding: 40px 15px 100px;
 	}
-}
+}*/
