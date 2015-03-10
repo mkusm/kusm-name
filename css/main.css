@@ -1,32 +1,32 @@
-body {/*
-  font-family: 'Lato', 'Avenir', sans-serif;
-  font-weight: 400;
-  font-size: 15px;*/
+body {
   letter-spacing: .4px;
   line-height: 25px;
-	font-family: Verdana, sans-serif;
+  font-family: Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-	background-color: #EEE
+  background-color: #EEE
 }
 
 h1 {
-	margin-top: 0px;
+  line-height: 1.1;
+  margin-top: 2px;
 }
 
-blockquote {
+q {
   font-style: italic;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-blockquote:after {
-  font-style: normal;
-  text-align: right;
-  display: block;
-  content: " — " attr(cite);
+q:before {
+    content: none;
 }
 
 a {
-  text-decoration: none;	
+  text-decoration: none;
+  color: #A8CD1B;
 }
 
 a:visited {
@@ -35,7 +35,6 @@ a:visited {
 
 a:hover {
   color: black;
-  background-color: #A8CD1B;
 }
 
 a:active {
@@ -50,54 +49,61 @@ a:active {
 }
 
 .row {
-	padding-top: 100px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .row.green-1 {
-	background-color: #005A31;
-	color: #EEE;
+  background-color: #005A31;
+  color: #EEE;
 }
 
 .row.green-2 {
-	background-color: #A8CD1B;
-	padding-top: 120px;
-	padding-bottom: 140px;
+  background-color: #A8CD1B;
+  padding-top: 120px;
+  padding-bottom: 140px;
 }
 
 .row.green-3 {
-	background-color: #CBE32D;
+  background-color: #CBE32D;
 }
 
 .row.green-4 {
-	background-color: #F3FAB6;
+  background-color: #F3FAB6;
 }
 
 .row.dark {
-	background-color: #333;
-	color: #EEE;
+  background-color: #333;
+  color: #EEE;
 }
 
 .hidden.green-1 {
-	color: #005A31;
+  color: #005A31;
 }
 
 .hidden.green-1:hover {
-	color: #EEE;	
+  color: #EEE;
 }
 
 .hidden.dark {
-	color: #333;
+  color: #333;
 }
 
 .hidden.dark:hover {
-	color: #EEE;	
+  color: #EEE;
 }
 
 .head {
-	padding-bottom: 10px;
+  padding-bottom: 10px;
 }
-	
+
+.author {
+  font-style: normal;
+  text-align: right;
+  display: block;
+  margin-bottom: 10px;
+}
+  
 
 #references {
   max-width: 380px;
@@ -106,41 +112,61 @@ a:active {
 }
 
 #why {
-	display: block;
-	text-align: right;
-	font-size: 0.5em;
-	background-color: #333;
+  margin-top: 50px;
+  display: block;
+  text-align: right;
+  font-size: 0.6em;
+  background-color: #333;
+  line-height: 12px;
 }
+
 #why:hover {
-	color: #EEE;
+  color: #EEE;
 }
 
 #me {
-	max-width: 130px;
-	border-radius: 15%
+  max-width: 130px;
+  border-radius: 15%;
 }
 
 
 /*---------------------------------------------------------------------------*/
 
 
-@media (min-width: 768px) {
-	.content {
-		max-width: 750px;
-	}
+@media (min-width: 788px) {
+  .content {
+    max-width: 750px;
+  }
 
-	#me {
-		float: left;
-		margin-right: 20px;
-	}
+  #me {
+    float: left;
+    margin-right: 20px;
+  }
 
-	#head-text {	
-	  margin-top: 10px;
-	}
+  #head-text {  
+    margin-top: 10px;
+  }
 }
 
-@media (max-width: 767px) {
-  .head {
-		text-align: center;
+@media (max-width: 787px) {
+  .row.dark.head {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .content.head {
+    padding: 0;
+  }
+
+  .content {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #me {
+    max-width: 150px;
+    border-radius: 15%;
+    margin-bottom: 20px;
   }
 }
