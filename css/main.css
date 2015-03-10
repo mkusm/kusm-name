@@ -7,6 +7,7 @@ body {/*
 	font-family: Verdana, sans-serif;
   margin: 0;
   padding: 0;
+	background-color: #EEE
 }
 
 h1 {
@@ -24,6 +25,23 @@ blockquote:after {
   content: " — " attr(cite);
 }
 
+a {
+  text-decoration: none;	
+}
+
+a:visited {
+  color: #A8CD1B;
+}
+
+a:hover {
+  color: black;
+  background-color: #A8CD1B;
+}
+
+a:active {
+  background-color: #A8CD1B;
+}
+
 
 .content {
   margin-left: auto;
@@ -32,17 +50,19 @@ blockquote:after {
 }
 
 .row {
-	padding-top: 70px;
-  padding-bottom: 70px;
+	padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .row.green-1 {
 	background-color: #005A31;
-	color: #DDD;
+	color: #EEE;
 }
 
 .row.green-2 {
 	background-color: #A8CD1B;
+	padding-top: 120px;
+	padding-bottom: 140px;
 }
 
 .row.green-3 {
@@ -55,11 +75,7 @@ blockquote:after {
 
 .row.dark {
 	background-color: #333;
-	color: #DDD;
-}
-
-.header {
-
+	color: #EEE;
 }
 
 .hidden.green-1 {
@@ -67,7 +83,7 @@ blockquote:after {
 }
 
 .hidden.green-1:hover {
-	color: #DDD;	
+	color: #EEE;	
 }
 
 .hidden.dark {
@@ -75,40 +91,56 @@ blockquote:after {
 }
 
 .hidden.dark:hover {
-	color: #DDD;	
+	color: #EEE;	
 }
 
-
-
-#head {
+.head {
 	padding-bottom: 10px;
 }
 	
+
 #references {
   max-width: 380px;
   margin-left: auto;
   margin-right: auto;
-  overflow: auto;
+}
+
+#why {
+	display: block;
+	text-align: right;
+	font-size: 0.5em;
+	background-color: #333;
+}
+#why:hover {
+	color: #EEE;
+}
+
+#me {
+	max-width: 130px;
+	border-radius: 15%
 }
 
 
+/*---------------------------------------------------------------------------*/
 
-/******************************************************************************/
-/** Wide screen **/
-@media (min-width: 992px) {
-	.content {
-		max-width: 970px;
-	}
-}
-/** Above iPad **/
+
 @media (min-width: 768px) {
 	.content {
 		max-width: 750px;
 	}
-}
-/** Mobile-ish **/
-/*@media (max-width: 767px) {
-	body {
-		padding: 40px 15px 100px;
+
+	#me {
+		float: left;
+		margin-right: 20px;
 	}
-}*/
+
+	#head-text {	
+	  margin-top: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+  .head {
+		text-align: center;
+  }
+}
