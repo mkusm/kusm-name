@@ -7,7 +7,7 @@ body {
   line-height: 25px;
   font-family: Verdana, sans-serif;
   margin: 0;
-  background-color: #EEE
+  background-color: #333
 }
 
 h1 {
@@ -19,6 +19,10 @@ h1 {
 h2 {
   margin: 0;
   padding: 0;
+}
+
+strong {
+  color: #352A56;
 }
 
 q {
@@ -51,6 +55,11 @@ a:active {
 .content {
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.15em;
+}
+
+.content-head {
+  font-size: 1em;
 }
 
 .row {
@@ -59,22 +68,33 @@ a:active {
 }
 
 .row-head {
+  padding-top: 100px;
   padding-bottom: 100px;
   line-height: 0px;
 }
 
 .purple {
-  background-color: #424;
+  background-color: #352A56;
   color: #EEE;
 }
 
 .green {
   background-color: #80CD1B;
+  color: black;
+}
+
+.light {
+  background-color: #EEE;
+  color: black;
 }
 
 .dark {
   background-color: #333;
   color: #EEE;
+}
+
+.python {
+  color: #80CD1B;
 }
 
 .author {
@@ -84,17 +104,17 @@ a:active {
   margin-bottom: 10px;
 }
 
-#head-text {
+.head-text {
     line-height: 25px;
 }
 
-#references {
+.references {
   max-width: 380px;
   margin-left: auto;
   margin-right: auto;
 }
 
-#why {
+.why {
   margin-top: 50px;
   display: block;
   text-align: right;
@@ -104,11 +124,11 @@ a:active {
   text-decoration: none;
 }
 
-#why:hover {
+.why:hover {
   color: #EEE;
 }
 
-#me {
+.me {
   max-width: 150px;
   border-radius: 15%;
 }
@@ -122,14 +142,11 @@ a:active {
     max-width: 720px;
   }
 
-  #me {
-    margin-right: 20px;
-  }
-
-  #head-text {
+  .head-text {
     display: inline-block;
     vertical-align: top;
-    margin-top: 39px;
+    margin-top: 30px;
+    margin-left: 20px;
   }
 }
 
@@ -145,19 +162,17 @@ a:active {
     padding-bottom: 70px;
   }
 
-  .content-head {
-    padding: 0;
-    margin: 0;
-  }
-
   .content {
     margin-left: 4%;
     margin-right: 4%;
   }
 
-  #me {
-    max-width: 150px;
-    border-radius: 15%;
-    margin-bottom: 20px;
+  .content-head {
+    padding: 0;
+    margin: 0;
+  }
+
+  .head-text {
+    margin-top: 25px;
   }
 }        
