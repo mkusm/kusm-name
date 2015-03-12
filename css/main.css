@@ -123,16 +123,20 @@ a:active {
 }
 
 .why {
-  margin-top: 50px;
   text-align: right;
   font-size: 0.6em;
   line-height: 12px;
   text-decoration: none;
+  margin: 10px 10px 10px 10px;
 }
 
 .me {
   max-width: 150px;
   border-radius: 15%;
+}
+
+.skills {
+  padding-top: 35px;
 }
 
 /*-------------------------------------------------------*/
@@ -160,6 +164,10 @@ a:active {
 
   .oneoftwo-two {
     margin-left: 13px;
+  }
+
+  .end {
+    padding-bottom: 100px;
   }
 }
 
