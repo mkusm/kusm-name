@@ -1,0 +1,8 @@
+#junk
+*~
+
+#python unnecessary files
+*.pyc
+
+#hidden files
+.*
